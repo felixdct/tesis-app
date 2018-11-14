@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY baseURL "http://192.168.15.111/authenticate2">
+    <!ENTITY baseWS  "/controller.php?controller=User&amp;format=json">
+    ]>
+
+<resources>
+    <string name="app_name">tesisApp</string>
+
+    <!-- WebService URL's -->
+    <string name="baseurl" id="baseurl">&baseURL;</string>
+    <!-- Validate QR -->
+    <string name="QRValidateURI" id="QRValidateURI">&baseURL;&baseWS;&amp;method=validateQR&amp;nickname=%1$s&amp;op=%2$s&amp;qrhash=%3$s&amp;tries=%4$s</string>
+    <!-- Cancel current operation -->
+    <string name="GenCancelOp" id="GenCancelOp">&baseURL;&baseWS;&amp;method=completeOrCancelOperation&amp;nickname=%1$s&amp;op=%2$s&amp;err=%3$s</string>
+    <!-- Send public Key -->
+    <string name="SendPublicKey" id="SendPublickKey">&baseURL;&baseWS;&amp;method=savePublicFingerPrintKey&amp;nickname=%1$s&amp;op=%2$s&amp;fingerprintkey=%3$s</string>
+    <!-- Verify data signed by signature got from fingerprint -->
+    <string name="VerifyFingerPrintData" id="VerifyFingerPrintData">&baseURL;&baseWS;&amp;method=validateFingerprintData&amp;nickname=%1$s&amp;op=%2$s&amp;newpasswd=%3$s&amp;fingerprintdata=%4$s&amp;fingerprintsignature=%5$s&amp;err=%6$s&amp;tries=%7$s</string>
+
+
+    <!-- View components -->
+    <!-- Usuario TextView in FingerPrintActivity -->
+    <string name="txtViewFingerPrint_Usuario" id="txtViewFingerPrint_Usuario">Bienvenido, %1$s</string>
+    <!-- Mensaje TextView in FingerPrintActivity -->
+    <string name="txtViewFingerPrint_Mensaje" id="txtViewFingerPrint_Mensaje">Introduce tu huella dactilar</string>
+</resources>

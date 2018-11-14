@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esime.authentication.views.FingerPrintActivity">
+
+    <TextView
+        android:id="@+id/Usuario"
+        android:layout_width="328dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="29dp"
+        android:text="Aquí va el nombre del usuario"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/fingerImage"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="110dp"
+        android:src="@mipmap/fingerprinticon"
+        app:layout_constraintBottom_toTopOf="@+id/Mensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Usuario"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="180dp"
+        android:layout_height="159dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginTop="16dp"
+        android:text="Aquí va el mensaje"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fingerImage" />
+
+</android.support.constraint.ConstraintLayout>
